@@ -1,11 +1,18 @@
 {
-  "name": "autowrite-server",
-  "version": "1.0.0",
-  "description": "A web app for generating Ai content",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Anupam Mandal",
-  "license": "ISC"
+    "name": "autowrite-server",
+    "version": "1.0.0",
+    "description": "A web app for generating Ai content",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "type": "module",
+    "author": "Anupam Mandal",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mongoose": "^8.5.2"
+    }
 }
