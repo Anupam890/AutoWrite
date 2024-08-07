@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
 
-const users = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String
     },
@@ -38,4 +38,5 @@ users.pre('save', (password) => {
     this.password = bcrypt.hashSync(this.password, 10);
 })
 
-export const Users = mongoose.model('Users', users);
+const Users = mongoose.model('Users', userSchema);
+export default Users;
