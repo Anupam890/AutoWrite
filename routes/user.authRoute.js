@@ -3,7 +3,8 @@ import { registerUser } from '../controller/user.auth.js';
 
 let route = Router();
 
-route.get('/register', registerUser);
+route.post('/register', registerUser);
+
 
 
 export default route;
